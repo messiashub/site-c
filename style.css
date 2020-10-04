@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding:0;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cabecalho {
+    width: 970px;
+    height: 100px;
+    background: blue;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.cabecalho .logo h1{
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.cabecalho .logo p{
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #fff;
+    margin:5px 10px;
+}
+
+
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    
+}
+.menu ul li {
+    max-width: 300px;
+   
+
+}  
+.menu li a{
+    max-width: 300px;
+    text-decoration: none; 
+    font-size: 1.5em; 
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px;
+    margin: 5px;
+    
+    
+}
