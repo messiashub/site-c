@@ -1,58 +1,83 @@
-* {
+body, h1, h2 , p, ul li a{
     margin: 0;
-    padding:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
-header{
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+}
+.info-br{
+    background: #3b3838;
+    color: #fff;
+}
+.info{
+    max-width: 1280px;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
     flex-wrap: wrap;
 }
+.info p, .info a{
+    margin: 0px 10px 10px 10px;
+}
+a{
+    color: #fff;
+}
 
-.cabecalho {
-    width: 970px;
-    height: 100px;
-    background: blue;
+.cabecalho-total {
+    background: #504c4c;
+}
+.cabecalho{
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 0px;
     flex-wrap: wrap;
-
 }
-
-.cabecalho .logo h1{
-    font-size: 2em;
+.logo h1{
+    font-size: 2.30em;
     color: #fff;
     text-transform: uppercase;
     font-style: italic;
+    margin: 10px;
 }
-.cabecalho .logo p{
-    font-size: 0.8em;
-    text-transform: uppercase;
+.logo p{
+    font-size: 0.9em;
     color: #fff;
-    margin:5px 10px;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-left: 15px;
+    margin-top: 10px; 
+    flex-wrap: wrap;   
 }
-
-
-
 .menu ul{
     display: flex;
-    list-style: none;
+    padding-left:0px;
     flex-wrap: wrap;
-    
-}
-.menu ul li {
-    max-width: 300px;
-   
 
-}  
-.menu li a{
-    max-width: 300px;
-    text-decoration: none; 
-    font-size: 1.5em; 
-    color: #fff;
+}
+.menu a{
+    font-size: 1.50em;
     text-transform: uppercase;
-    padding: 5px;
-    margin: 5px;
-    
+    display: block;
+    padding: 15px;
+}
+.menu a:hover{
+    color: blue;
+}
+
+.slide-caixa {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
     
 }
