@@ -1,7 +1,7 @@
 body, h1, h2 , p, ul li a{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "lato", Arial, Helvetica, sans-serif;
 }
 ul {
     list-style: none;
@@ -30,6 +30,9 @@ a {
 a{
     color: #fff;
 }
+a:hover{
+    color: rgb(255, 0, 0) ;
+}
 
 .cabecalho-total {
     background: #504c4c;
@@ -56,7 +59,7 @@ a{
     text-transform: uppercase;
     font-weight: bold;
     font-style: italic;
-    margin-left: 33px;
+    margin-left: 25px;
     margin-top: 10px; 
     flex-wrap: wrap;   
 }
@@ -73,7 +76,7 @@ a{
     padding: 15px;
 }
 .menu a:hover{
-    color: blue;
+    color: rgb(255, 0, 0);
 }
 
 .slide-banner {
@@ -81,19 +84,15 @@ a{
     height: 500px;
     overflow: hidden;
     position: relative;
-    animation: slide 20s infinite;
-    animation-direction: alternate;
-    
+    animation: slide 15s infinite;
+    animation-direction: alternate;    
 }
-
-
-
 @keyframes slide {
-    0% , 10%{
+    0% {
         background-image: url(../arquivos/1.jpg);   
         opacity: 1;
     }
-    25% {
+    50% {
         background-image: url(../arquivos/2.jpg);       
         opacity: 1;
     }
@@ -102,4 +101,21 @@ a{
         opacity: 1;
     }
 }
+
+
+.slide-banner .texto{
+    display: flex;
+}
+.slide-banner li{
+    margin: 80px;
+}
+.slide-banner p{
+    color: rgb(252, 246, 246);
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 3px 4px 2px rgba(0, 0, 0, 0.322);
+}
+
 
