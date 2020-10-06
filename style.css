@@ -89,33 +89,67 @@ a:hover{
 }
 @keyframes slide {
     0% {
-        background-image: url(../arquivos/1.jpg);   
+        background-image: url(../arquivos/a.jpg);   
         opacity: 1;
     }
     50% {
-        background-image: url(../arquivos/2.jpg);       
+        background-image: url(../arquivos/b.jpg);       
         opacity: 1;
     }
     100% {
-        background-image: url(../arquivos/3.jpg);
+        background-image: url(../arquivos/c.jpg);
         opacity: 1;
     }
 }
-
-
 .slide-banner .texto{
     display: flex;
 }
 .slide-banner li{
-    margin: 80px;
+    position: relative;
+    width: 920px;
+    margin-top: 70px;
+    
+
+    }
+.slide-banner li:nth-of-type(1){
+    
+    animation-name: anima;
+    animation-duration: 1.4s ;
+    animation-timing-function: linear;
+    
+}
+.slide-banner li:nth-of-type(2){
+   
+    animation-name: anima;
+    animation-duration: 1.7s ;
+    animation-timing-function: linear;
+    
+ 
+
+}
+.slide-banner li:nth-of-type(3){
+  
+    animation-name: anima;
+    animation-duration: 1.9s ;
+    animation-timing-function: linear; 
+   
+
+    
 }
 .slide-banner p{
     color: rgb(252, 246, 246);
-    font-size: 2.5em;
+    font-size: 2.7em;
     font-style: italic;
-    font-weight: 500;
+    font-weight: bold;
     text-transform: uppercase;
-    text-shadow: 3px 4px 2px rgba(0, 0, 0, 0.322);
+    text-shadow: 3px 4px 1px rgba(0, 0, 0, 0.322);
+}
+
+
+@keyframes anima{
+    from{left: -920px; opacity: 0;}
+    to {left:0px; opacity: 1;}
+
 }
 
 
