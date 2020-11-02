@@ -3,6 +3,9 @@ body, h1, h2 , p, ul li a{
     padding: 0;
     font-family: "lato", Arial, Helvetica, sans-serif;
 }
+body{
+    background-color:white;
+}
 ul {
     list-style: none;
 }
@@ -12,73 +15,80 @@ a {
 *{
     box-sizing: border-box;
 }
-.info-br{
-    background: #3b3838;
-    color: #fff;
-}
-.info{
-    max-width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
-    flex-wrap: wrap;
-}
-.info p, .info a{
-    margin: 0px 10px 10px 10px;
-}
+
+
 a{
     color: #fff;
 }
 a:hover{
     color: rgb(255, 0, 0) ;
 }
-
 .cabecalho-total {
+    max-width: 1000px;
+    margin: auto;   
     background: #504c4c;
+    flex-wrap: wrap;    
+} 
+.cabecalho{    
+    border: 1px solid;    
+    position: relative;
+    background-color:#504c4c ;
+    padding: 10px;
+    flex-wrap: wrap;   
 }
-.cabecalho{
-    max-width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0px;
-    flex-wrap: wrap;
+.logo{
+    display: inline-block;
+    border: 1px solid red; 
+
 }
 .logo h1{
-    font-size: 2.30em;
-    color: #fff;
+    font-size: 2.5em;
+    color: white;
     text-transform: uppercase;
     font-style: italic;
     margin: 10px;
 }
 .logo p{
     font-size: 0.9em;
-    color: #fff;
+    color: white;
     text-transform: uppercase;
     font-weight: bold;
     font-style: italic;
     margin-left: 25px;
-    margin-top: 10px; 
-    flex-wrap: wrap;   
 }
-.menu ul{
-    display: flex;
-    padding-left:0px;
+.menu{
+    position: absolute; 
+    display: inline-block; 
+    margin-top: 10px;   
+    right: 15px;
     flex-wrap: wrap;
+    
+    
+    
+    
+}
+.menu ul li{
+    display: inline-block;
+       
+}
+.menu li a{
+    font-size: 1.5em;
+    padding: 20px;
+    
+    
+}
+@media(max-width:435px){
+    .cabecalho{
+        height: 400px;
+        position: none;
 
-}
-.menu a{
-    font-size: 1.50em;
-    text-transform: uppercase;
-    display: block;
-    padding: 15px;
-}
-.menu a:hover{
-    color: rgb(255, 0, 0);
-}
 
+    }
+    .menu ul li{
+        display: block;
+    }
+   
+}
 .slide-banner {
     width: 100%;
     height: 500px;
@@ -89,15 +99,115 @@ a:hover{
 }
 @keyframes slide {
     0% {
-        background-image: url(../arquivos/a.jpg);   
+        background-image: url(./arquivos/a.jpg);   
         opacity: 1;
     }
     50% {
-        background-image: url(../arquivos/b.jpg);       
+        background-image: url(./arquivos/b.jpg);       
         opacity: 1;
     }
     100% {
-        background-image: url(../arquivos/c.jpg);
+        background-image: url(./arquivos/c.jpg);
+        opacity: 1;
+    }
+}
+
+
+/*.cabecalho{
+    width:80%;
+    margin:0 auto;
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+   
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px ; 
+    flex-wrap: wrap;
+}
+/*
+
+.menu{
+  
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.menu li{
+    float: left;
+    
+    
+   
+}
+.menu a{
+    top: 15px;
+}
+.logo{
+    float: left;
+    color: white;
+}
+
+.logo h1{
+    font-size: 2.30em;
+    text-transform: uppercase;
+    font-style: italic;
+    margin: 10px;
+}
+.logo p{
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 25px;
+    margin-top: 10px; 
+    flex-wrap: wrap;   
+}
+.menu a{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    display: block;
+    padding: 15px;
+}
+.menu a:hover{
+    color: rgb(255, 0, 0);
+}
+@media(max-width:400px){
+    .logo{
+        float: none;
+        text-align: center;
+    }
+    
+    .menu{
+        float: none;
+        text-align: center;
+        
+    }
+    li{
+        float: none;    
+    }
+   
+}
+.slide-banner {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    animation: slide 15s infinite;
+    animation-direction: alternate;    
+}
+
+@keyframes slide {
+    0% {
+        background-image: url(./arquivos/a.jpg);   
+        opacity: 1;
+    }
+    50% {
+        background-image: url(./arquivos/b.jpg);       
+        opacity: 1;
+    }
+    100% {
+        background-image: url(./arquivos/c.jpg);
         opacity: 1;
     }
 }
@@ -108,9 +218,7 @@ a:hover{
     position: relative;
     width: 920px;
     margin-top: 70px;
-    
-
-    }
+}
 .slide-banner li:nth-of-type(1){
     
     animation-name: anima;
@@ -123,18 +231,12 @@ a:hover{
     animation-name: anima;
     animation-duration: 1.7s ;
     animation-timing-function: linear;
-    
- 
-
 }
 .slide-banner li:nth-of-type(3){
   
     animation-name: anima;
     animation-duration: 1.9s ;
-    animation-timing-function: linear; 
-   
-
-    
+    animation-timing-function: linear;     
 }
 .slide-banner p{
     color: rgb(252, 246, 246);
@@ -145,11 +247,54 @@ a:hover{
     text-shadow: 3px 4px 1px rgba(0, 0, 0, 0.322);
 }
 
-
 @keyframes anima{
     from{left: -920px; opacity: 0;}
     to {left:0px; opacity: 1;}
 
 }
+.container{
+    width:100%
+}
+.sobre{
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    position: relative;
+   
+    
+   
+    background-color: tomato;
+}
+.sobre h1{
+    display: block;
+    font-size: 2em;
+    color: #ffff;
+}
+.texto2{
+    width: 900px;
+    height: 200px;
+    top: 30px;
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    overflow: hidden;
+    position:absolute;
+}
+.contato{
+    width: 300px;
+    height: 200px;
+    font-size: 1.2em;
+    background-color: green;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    justify-content: center;
+}
+
+
+
+    
+
 
 
