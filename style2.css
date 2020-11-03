@@ -147,7 +147,7 @@ nav li a{
     font-family: var(--var-font-family); */
 }
 .sobrep{
-    width: 400px;
+    max-width: 400px;
     
 }
 .sobre p{
@@ -177,6 +177,16 @@ nav li a{
     background-color: #ffff;
     /* flex-wrap: wrap;  */ 
 }
+.servicos .topo{
+    display: flex;
+    max-width: 1350px;
+    justify-content: center;
+    margin: auto;
+}
+.topo h2{
+    font-size: 3em;
+}
+
 .servicos-cards{
     display: flex;
     max-width: 1350px;  
@@ -184,49 +194,72 @@ nav li a{
     margin: auto; 
    /*  height: 100vh; */
     /* margin: auto; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* border: 1px solid black; */
     justify-content: space-between; 
     align-items: center;      
     flex-wrap: wrap;
 }
-.servicos-cards h2{
-   
+.servicos-cards h2{  
    width: 250px;
     
 }
 h2{
     padding: 20px 20px 20px 0;
     margin:10px 10px 10px 0;
-    font-size: 3em;
+    font-size: 2em;
     color: rgb(59, 58, 58);
     font-family: var(--var-font-family);
 }
-.cards{
+.servicos-cards{
     display: flex;
-    /* flex-direction: column; */
-    text-align: center;
+    /* justify-content: space-around */;
+    /* flex-direction: column;  */
+    /* text-align: center; */
     /* border: 1px solid; */
     flex-wrap: wrap;
 }
-.cards-wrapper{   
-    width: 250px;     
-    padding: 10px;
-    margin: 20px;
-    flex-wrap: wrap;
-    
+.cards-wrapper{
+    margin: 15px;
 }
-.cards-wrapper.a{
+.cards-wrapper img{   
+    width: 300px;
+    height: 200px; 
+    /* padding: 10px; */
+    margin-top: 100px;
+    box-shadow: 2px 2px 5px  rgb(51, 50, 50);
+    object-fit: cover; 
+    /* border: 1px solid;     
+    /* padding: 10px;
+    margin: 20px;
+    flex-wrap: wrap; */    
+}
+
+.servicos-cards .cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards-wrapper h3{
+    width: 300px;
+    color: rgb(49, 49, 49);
+    font-size: 1.4em;
+    font-style: italic;
+    margin-top: 15px;
+    margin-bottom: 100px;
+    font-family: var(--var-font-family);
+
+}
+/* .cards-wrapper.a{
     background-color: rgba(240, 248, 255, 0.233);
-   /*  border: 1px solid rgb(226, 49, 43); */
+    border: 1px solid rgb(226, 49, 43);
 }
 .cards-wrapper.b{
     background-color: rgba(240, 248, 255, 0.233);
-    /* border: 1px solid rgb(226, 49, 43); */
+    /* border: 1px solid rgb(226, 49, 43); 
 }
 .cards-wrapper.c{
     background-color: rgba(240, 248, 255, 0.233);
-   /*  border: 1px solid rgb(226, 49, 43); */
+   /border: 1px solid rgb(226, 49, 43); 
 }
 .cards-wrapper h3{
     color: rgb(17, 16, 16);
@@ -234,9 +267,9 @@ h2{
     font-family: var(--var-font-family);
     font-weight: normal;
     font-size: 1.3em;
-}
-.cards-wrapper img{
-    box-sizing: border-box;
+} */ 
+/* .cards-wrapper img{
+    box-sizing: border-box; */
 
 }
  
