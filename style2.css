@@ -302,7 +302,8 @@ h2{
 /* Footer */
 
 .container{
-    width: 100%;   
+    width: 100%;  
+    color: rgb(68, 63, 63);
 }
 .footer{
     max-width: 1350px;
@@ -312,9 +313,8 @@ h2{
     flex-wrap: wrap;
     
 }
-.logo{
+.logo2{
     width: 600px;
-    border: 1px solid;
     justify-content: space-between;
     align-items: center;
     display:flex;
@@ -323,33 +323,72 @@ h2{
     
 }
 .logo1{
-    max-width: 240px;
+
+    padding: 10px 10px 10px 0;
+    width: 240px;
+}
+.logo1 h1{
+    font-family: var(--var-font-family);
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 2.2em;
+}
+.logo1 p{
+    position: relative;
+    
+    left: 5px;
+    font-family: var(--var-font-family);
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
 }
 .logo .direitos{
     width: 300px;
+    color:rgb(192, 184, 184);
 }
 
 .contato{
     margin: 5px;
-    border: 1px solid;
+    padding: 20px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+.contato .sociais p{
+    font-size: 1.5em;
+}
+.contato .sociais{
+    text-align: center;
+}
+.contato .endereco{
+    text-align: center;
 }
 .contato p{   
     font-size:1.1em;
     font-family: var(--var-font-family);
     padding: 10px;
+    color: rgb(192, 184, 184);
 }
-
-
 .sociais li{
     list-style: none;
 }
 .sociais li a i{
    font-size: 40px;
-   padding: 10px;
-  
+   padding: 10px; 
+}
+.sociais .face{
+    color: rgb(76, 150, 247);
+}
+.sociais .insta{
+    color: rgba(226, 43, 67, 0.712);
+}
+.sociais .whats{
+    color: green;
+}
+.endereco .fone{
+    color: rgba(238, 241, 67, 0.603);
 }
 
 .endereco{
