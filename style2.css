@@ -298,6 +298,68 @@ h2{
     margin-top: 10px;
     margin-bottom: 40px;
 }
+
+/* Footer */
+
+.container{
+    width: 100%;   
+}
+.footer{
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.logo{
+    width: 600px;
+    border: 1px solid;
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+    flex-wrap: wrap;
+   
+    
+}
+.logo1{
+    max-width: 240px;
+}
+.logo .direitos{
+    width: 300px;
+}
+
+.contato{
+    margin: 5px;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contato p{   
+    font-size:1.1em;
+    font-family: var(--var-font-family);
+    padding: 10px;
+}
+
+
+.sociais li{
+    list-style: none;
+}
+.sociais li a i{
+   font-size: 40px;
+   padding: 10px;
+  
+}
+
+.endereco{
+    padding: 10px;
+}
+.endereco i{
+    font-size: 25px;
+}
+
+
 /* .cards-wrapper.a{
     background-color: rgba(240, 248, 255, 0.233);
     border: 1px solid rgb(226, 49, 43);
