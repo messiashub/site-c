@@ -7,12 +7,12 @@
 }
 
 body{
-    background-color: rgb(92, 86, 86);
+    background-color:rgb(45, 48, 47);
     
 }
 .superinfobr{
     width: 100%;
-    background-color:rgb(68, 63, 63); 
+    background-color:rgb(34, 36, 34); 
     /* position: fixed; */
    
     /* justify-content: space-between; */
@@ -69,6 +69,7 @@ body{
     width: 270px;
     padding: 20px 20px 20px 0;
    /*  margin-left: 10px; */
+   color: rgb(165, 12, 35);
     
     
 }
@@ -91,13 +92,16 @@ body{
     display: inline;
 }
 nav li{
-    margin-left: 50px;
+   /*  margin-left: 50px; */
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 10px;
 }
 nav li a{
     color: #fff;
     font-family: var(--var-font-family);
     font-size: 1.4em;
-    padding: 10px 0px 10px 10px;
+   /*  padding: 10px 0px 10px 10px; */
     text-transform: uppercase;
     text-decoration: none;
     transition: 0.5s;
@@ -105,12 +109,40 @@ nav li a{
 }
 nav li a:hover{
     color: red;
+    /* font-size: 1.5em; */
+    
+    
+}
+.banner{
+    position: relative;
+    display: flex;
+    width: 100%;
+   
+    overflow: hidden;
+    /* width: 1920px;
+    /* height: 500px; */
+} 
+.banner img{  
+    position: relative;  
+    width: 1920vw;
+    animation: mudaImagem 50s infinite ease-out ;
+    animation-delay: 1s; 
     
 }
 
-.banner img{
-    width: 100%;
 
+@keyframes mudaImagem{
+    0%{left: 0px;}
+    20%{left: 0px;}
+
+    30%{left:-1920px;}
+    50%{left: -1920px;}
+
+    60%{left:-3840px; }
+    90%{left:-3840px; }
+
+    100%{left: 0px;}
+    
 }
 .sobre1{
     width: 100%;
@@ -337,6 +369,7 @@ h2{
 .logo1 h1{
     font-family: var(--var-font-family);
     text-transform: uppercase;
+    color: black;
     font-style: italic;
     font-size: 2.2em;
 }
@@ -348,10 +381,11 @@ h2{
     text-transform: uppercase;
     font-style: italic;
     font-weight: bold;
+    color: black;
 }
-.logo .direitos{
+.logo2 .direitos{
     width: 300px;
-    color:rgb(192, 184, 184);
+    color:rgb(10, 10, 10);
 }
 
 .contato{
