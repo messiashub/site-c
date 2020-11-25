@@ -20,6 +20,17 @@ body{
     
 
 }
+.sobe{
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    z-index: 1;
+    
+}
+.sobe img{
+    width: 50px;
+   
+}
 .superinfo{
     display: flex;   
     max-width: 1350px;
@@ -116,6 +127,7 @@ nav li a:hover{
 .banner{
     position: relative;
     display: flex;
+    /* width: 100%; */
     width: 100%;
    
     overflow: hidden;
@@ -124,7 +136,9 @@ nav li a:hover{
 } 
 .banner img{  
     position: relative;  
-    width: 1920vw;
+    /* width: 1920vw; */
+    width: 100vw;
+
     animation: mudaImagem 50s infinite ease-out ;
     animation-delay: 1s; 
     
@@ -132,14 +146,14 @@ nav li a:hover{
 
 
 @keyframes mudaImagem{
-    0%{left: 0px;}
-    20%{left: 0px;}
+    0%{left: 0vw;}
+    20%{left: 0vw;}
 
-    30%{left:-1920px;}
-    50%{left: -1920px;}
+    30%{left:-100vw;}
+    50%{left: -100vw;}
 
-    60%{left:-3840px; }
-    90%{left:-3840px; }
+    60%{left:-200vw; }
+    90%{left:-200vw; }
 
     100%{left: 0px;}
     
@@ -259,18 +273,22 @@ h2{
 }
 .cards-wrapper{
     margin: 15px;
+    
 }
 .cards-wrapper img{   
     width: 300px;
     height: 200px; 
     /* padding: 10px; */
     margin-top: 40px;
-    box-shadow: 2px 2px 5px  rgb(51, 50, 50);
+    box-shadow: 2px 2px 5px  rgb(168, 168, 168);
     object-fit: cover; 
     /* border: 1px solid;     
     /* padding: 10px;
     margin: 20px;
-    flex-wrap: wrap; */    
+    /*flex-wrap: wrap; */    
+}
+.cards-wrapper img:hover{
+    opacity: 0.7;   
 }
 
 .servicos-cards .cards{
@@ -316,8 +334,11 @@ h2{
     height: 200px; 
     /* padding: 10px; */
     margin-top: 40px;
-    box-shadow: 2px 2px 5px  rgb(51, 50, 50);
+    box-shadow: 2px 2px 5px  rgb(168, 168, 168);
     object-fit: cover; 
+}
+.casa-wrapper img:hover{
+    opacity: 0.7;
 }
 .casa-wrapper h3{
     width: 300px;
