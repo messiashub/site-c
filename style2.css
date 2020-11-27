@@ -5,11 +5,15 @@
 :root{
     --var-font-family:Arial
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background-color:rgb(45, 48, 47);
     
 }
+
 .superinfobr{
     width: 100%;
     background-color:rgb(34, 36, 34); 
@@ -17,15 +21,13 @@ body{
    
     /* justify-content: space-between; */
     /* flex-wrap: wrap; */
-    
-
 }
 .sobe{
     position: fixed;
     right: 100px;
     bottom: 100px;
-    z-index: 1;
-    
+    z-index: 1;  
+    display: none; 
 }
 .sobe img{
     width: 50px;
@@ -38,9 +40,7 @@ body{
     justify-content: space-between;
     /* border: 1px solid black; */
     margin: auto;
-    flex-wrap: wrap;
-    
-    
+    flex-wrap: wrap;   
 }
 .superinfo p{
     font-family: var(--var-font-family);
@@ -140,10 +140,8 @@ nav li a:hover{
     width: 100vw;
 
     animation: mudaImagem 50s infinite ease-out ;
-    animation-delay: 1s; 
-    
+    animation-delay: 1s;    
 }
-
 
 @keyframes mudaImagem{
     0%{left: 0vw;}
@@ -358,7 +356,115 @@ h2{
     margin-top: 10px;
     margin-bottom: 40px;
 }
+.galeria{
+    width: 100%;
+    background-color:rgb(250, 243, 243); 
+    padding-bottom: 40px;
+    
+}
+.galeria1{
+    display: flex;
+    max-width: 1350px;
+    justify-content: center;
+    margin: auto;
 
+}
+.galeria1 h2{
+    font-size: 3em;
+    
+}
+
+.galeriaFotos{
+    max-width: 1150px; 
+    padding: 8px;
+    
+    margin: auto;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr/1fr 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+
+}
+/* .fotos{
+    width: 205px;
+    height: 135px; 
+    overflow: hidden;   */  
+
+.fotos img{
+    width: 205px;
+    height: 135px;
+    border-radius: 5px;
+    object-fit: cover; 
+}
+@media(max-width:1082px){
+    .galeriaFotos{
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr/1fr 1fr 1fr 1fr;
+        /* column-gap: 10px; */
+    }
+}
+@media(max-width:894px){
+    .galeriaFotos{
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr/1fr 1fr 1fr;
+    }
+}
+@media(max-width:645px){
+    .galeriaFotos{
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr/1fr 1fr;
+    }
+}
+@media(max-width:361px){
+    .galeriaFotos{
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr/1fr;
+        justify-content: center;
+        text-align: center;
+    }
+    .fotos img{
+        width: 300px;
+        height: 200px; 
+
+    }
+}
+@media(max-width:375px){
+    .galeriaFotos{
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr/1fr;
+        justify-content: center;
+        text-align: center;
+    }
+    .fotos img{
+        width: 300px;
+        height: 200px; 
+
+    }
+}
+@media(max-width:440px){
+    .galeriaFotos{
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr/1fr;
+        justify-content: center;
+        text-align: center;
+    }
+    .fotos img{
+        width: 300px;
+        height: 200px; 
+
+    }
+}
+
+
+.galeriaFotos .fotos{
+    display: inline-block;
+    
+      
+}
+
+/* .fotos img{
+    flex-wrap: wrap;
+} */
 /* Footer */
 
 .container{
