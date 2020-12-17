@@ -1,0 +1,8 @@
+
+body *{
+    box-shadow: inset 0px 0px 0px 1px rgba(195, 255, 0, 0.1);
+}
+
+html{
+    scroll-behavior: smooth;
+}
